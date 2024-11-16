@@ -1,0 +1,120 @@
+/* cta */
+.cta-group {
+    display: flex;
+}
+
+.cta {
+    border-radius: 3rem;
+    padding: 0.9375rem 2rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--pri-clr__bright-orange);
+    background-color: var(--neu-clr__very-light-gray);
+}
+
+/* card */
+.card-group {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.card {
+    display: flex;
+}
+
+.card--sedans {
+    background-color: var(--pri-clr__bright-orange);
+}
+
+.card--suv {
+    background-color: var(--pri-clr__dark-cyan);
+}
+
+.card--luxury {
+    background-color: var(--pri-clr__very-dark-cyan);
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3rem 3.0625rem;
+}
+
+.card__icon-group {
+    margin-block-end: 2.25rem;
+    display: flex;
+}
+
+.card__icon {
+    display: flex;
+}
+
+.card__text {
+    margin-block-end: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__heading {
+    margin-block-end: 1.5rem;
+    font-family: var(--ff__bsd);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--neu-clr__very-light-gray);
+}
+
+.card__sub-heading {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    color: var(--neu-clr__transparent-white);
+}
+
+.cta--sedans {
+    color: var(--pri-clr__bright-orange);
+}
+
+.cta--suv {
+    color: var(--pri-clr__dark-cyan);
+}
+
+.cta--luxury {
+    color: var(--pri-clr__very-dark-cyan);
+}
+
+@media screen and (min-width: 26.5625rem) {
+    /* card */
+    .card {
+        max-width: 19.1875rem;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    /* cta */
+    .cta {
+        border: 0.125rem solid transparent;
+    }
+
+    .cta:hover {
+        border: 0.125rem solid var(--neu-clr__very-light-gray);
+        color: var(--neu-clr__very-light-gray);
+        background-color: transparent;
+        transition: all 0.2s ease-out;
+    }
+    
+    /* card */
+    .card-group {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card__text {
+        margin-block-end: 5.25rem;
+    }
+}

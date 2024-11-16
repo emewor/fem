@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url("../fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf");
+}
+
+:root {
+    --pri-clr__bright-orange: hsl(31, 77%, 52%);
+    --pri-clr__dark-cyan: hsl(184, 100%, 22%);
+    --pri-clr__very-dark-cyan: hsl(179, 100%, 13%);
+    --neu-clr__transparent-white: hsla(0, 0%, 100%, 0.75);
+    --neu-clr__very-light-gray: hsl(0, 0%, 95%);
+    --ff__ld: "Lexend Deca";
+    --ff__bsd: "Big Shoulders Display";
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    margin: 0;
+    font-family: var(--ff__ld);
+    background-color: var(--neu-clr__very-light-gray);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 5.5rem 1.5rem;
+}
+
+@media screen and (min-width: 90rem) {
+    .main {
+        padding: 10.5rem 0;
+    }
+}
